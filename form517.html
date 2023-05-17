@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("d2.jpg");
+            background-repeat: no-repeat;
+        }
+        input[type = text]:hover{
+            border: 3px solid blue;
+            background-color:pink;
+            margin-bottom: 12px;
+            width: 200px;
+            height: 200px;
+            background-repeat: no-repeat;
+            background-image: url("applecat.gif")
+        }
+        input[type = email]:hover{
+            border: 3px solid blue;
+            background-color: black;
+            color: pink;
+            margin-bottom: 12px;
+            width: 500px;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-image: url("cat-jump.gif")
+        }
+        #subject:hover{
+            background-color: white;
+            border: none;
+            padding: 14px;
+            width: 600px;
+            height: 600px;
+            background-repeat: no-repeat;
+            background-image: url("banana-crying-cat.gif")
+        }
+    </style>
+</head>
+<body>
+    <h2 style="font: bold;" >상품 평</h2>
+    <p style="font: bold;">받으신 상품을 평가해주세요.</p>
+    <div>
+        <form action="process.jsp">
+            <label for="name">사과</label>
+            <input type="text" id="name" name="name" placeholder="이름"><br>
+            <label for="email">점프</label>
+            <input type="email" id="email" name="email" placeholder="이메일"><br>
+            <label for="subject">바나나</label>
+            <textarea id="subject" name="subject" placeholder="상품을 평가해주세요."></textarea>
+            </form>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
